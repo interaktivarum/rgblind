@@ -14,12 +14,12 @@ No installation is needed, just clone the or download the files and place them i
 * rgblind.css
 * rgblind.svg
 
-When including **rgblind.js** on your webpage, the Javascript code injects the **rgblind.css** stylesheet and the SVG filters from **rgblind.svg** into the HTML code. The filters are applied by assigning classes to the DOM elements in the HTML code.
-
+When including **rgblind.js** on your webpage, the Javascript code injects the **rgblind.css** stylesheet and the SVG filters from **rgblind.svg** into the HTML code.
 ```html
 <script src="rgblind/rgblind.js"></script> <!-- include rgblind.js -->
 ```
 
+The filters are applied by assigning classes to the DOM elements in the HTML code.
 ```html
 <img src="Ishihara_9.png" class="protanope"/> <!-- apply protanope filter to the image element -->
 ```
