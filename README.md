@@ -24,7 +24,7 @@ When including **rgblind.js** on your webpage, the Javascript code injects the *
 <img src="Ishihara_9.png" class="protanope"/> <!-- apply protanope filter to the image element -->
 ```
 
-See example: [simple example](examples/example.html).
+See [example](examples/example.html).
 
 ##Other RGBlind implementations
 RGBlind is available as (1) an extension to the user's web browser, (2) a webpage where the user can input an url for simulation, and (3) an open source toolkit for developers to use in their own web development code.
