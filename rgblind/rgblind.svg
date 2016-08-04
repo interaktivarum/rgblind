@@ -2,8 +2,8 @@
 	viewBox="0 0 0 0" preserveAspectRatio="xMidYMin meet"
 	xmlns="http://www.w3.org/2000/svg" version="1.1">	
 			
-	<!-- Protanope filter -->
-	<filter id="protanope" filterUnits="objectBoundingBox" 
+	<!-- Protanopia filter -->
+	<filter id="protanopia" filterUnits="objectBoundingBox" 
 		x="0%" y="0%" width="0" height="0">
 		<feColorMatrix in="SourceGraphic" type="matrix"
     values="0.1135	0.8905	-0.0019	0	-0.0021
@@ -12,8 +12,8 @@
 				  	0 	0 	0 	1 	0" />
 	</filter>
 	
-	<!-- Deuteranope filter -->
-	<filter id="deuteranope" filterUnits="objectBoundingBox" 
+	<!-- Deuteranopia filter -->
+	<filter id="deuteranopia" filterUnits="objectBoundingBox" 
 		x="0%" y="0%" width="0" height="0">
 		<feColorMatrix in="SourceGraphic" type="matrix"
 	    values="0.2936	0.7096	-0.0015	0	-0.0017

@@ -5,14 +5,14 @@
 .normal{
 }
 
-.protanope{
-	-webkit-filter: url('#protanope') !important;	
-	filter: url('#protanope') !important;
+.protanopia{
+	-webkit-filter: url('protanopia') !important;	
+	filter: url('protanopia') !important;
 	color-interpolation-filters:sRGB !important;	
 }
 
-.deuteranope{
-	-webkit-filter: url('#deuteranope') !important;
-	filter: url('#deuteranope') !important;
+.deuteranopia{
+	-webkit-filter: url('deuteranopia') !important;
+	filter: url('deuteranopia') !important;
 	color-interpolation-filters:sRGB !important;
 }
