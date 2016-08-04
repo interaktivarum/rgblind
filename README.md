@@ -27,9 +27,9 @@ When including **rgblind.js** on your webpage, the Javascript code injects the *
 See [example](examples/example.html).
 
 Available classes are:
-* .normal - normal vision, no filter is applied
-* .protanopia - simulates protanopia, lacking the red cones for long-wavelength sensitive retinal cones, those with this condition are unable to distinguish between colors in the green–yellow–red section of the spectrum.
-* .deuteranopia - simulates deuteranopia, lacking the green cones for medium-wavelength cones, those affected are again unable to distinguish between colors in the green–yellow–red section of the spectrum.
+* *.normal* - normal vision, no filter is applied
+* *.protanopia* - simulates protanopia, lacking the red cones for long-wavelength sensitive retinal cones, those with this condition are unable to distinguish between colors in the green–yellow–red section of the spectrum.
+* *.deuteranopia* - simulates deuteranopia, lacking the green cones for medium-wavelength cones, those affected are again unable to distinguish between colors in the green–yellow–red section of the spectrum.
 
 ##Other RGBlind implementations
 RGBlind is available as (1) an extension to the user's web browser, (2) a webpage where the user can input an url for simulation, and (3) an open source toolkit for developers to use in their own web development code.
