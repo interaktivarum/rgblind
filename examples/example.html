@@ -3,9 +3,7 @@
 <head>
 				
 	<title>RGBlind - example</title>
-	
-	<meta charset="utf-8">
-	
+		
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
 	<!-- Import RGBlind -->
@@ -13,45 +11,45 @@
 	
 </head>
 	
-	<body>
+<body>
+	
+	<div id="container">
 		
-		<div id="container">
-			
-			<h1>RGBlind example</h1>
-			
-			<p>
-				When including <strong>rgblind.js</strong>, the Javascript code injects the <strong>rgblind.css</strong> stylesheet and the SVG filters from <strong>rgblind.svg</strong> into the HTML code.
-			</p>
-			
-			<p>
-				The filters are applied by assigning classes to the DOM elements in the HTML code.
-			</p>
+		<h1>RGBlind example</h1>
 		
-			<p>
-				All the below Ishihara plates are the same png-image, but with different svg-filters applied to simulate color blindness.
-			</p>
+		<p>
+			When including <strong>rgblind.js</strong>, the Javascript code injects the <strong>rgblind.css</strong> stylesheet and the SVG filters from <strong>rgblind.svg</strong> into the HTML code.
+		</p>
 		
-			<div class="plate">
-				<h2>Normal vision</h3>
-				<img src="Ishihara_9.png" class=""/>
-			</div>
-			<div class="plate">
-				<h2>Protanopia filter</h3>
-				<!-- Apply protanopia filter to the image element -->
-				<img src="Ishihara_9.png" class="protanopia"/>
-			</div>
-			<div class="plate">
-				<h2>Deuteranopia filter</h3>
-				<!-- Apply deuteranopia filter to the image element -->
-				<img src="Ishihara_9.png" class="deuteranopia"/>
-			</div>
-			
-			<br class="clear"/>
-			
-			<a href="https://en.wikipedia.org/wiki/Ishihara_test">Wikipedia</a> on the 74 Ishihara color test plate: Depending on the computer displays, people with normal vision should see the number "74". Many people who are color blind see it as "21", and those with total color blindness may not see any numbers.
-					
+		<p>
+			The filters are applied by assigning classes to the DOM elements in the HTML code.
+		</p>
+	
+		<p>
+			All the below Ishihara plates are the same png-image, but with different svg-filters applied to simulate color blindness.
+		</p>
+	
+		<div class="plate">
+			<h2>Normal vision</h3>
+			<img src="Ishihara_9.png" class=""/>
 		</div>
+		<div class="plate">
+			<h2>Protanopia filter</h3>
+			<!-- Apply protanopia filter to the image element -->
+			<img src="Ishihara_9.png" class="protanopia"/>
+		</div>
+		<div class="plate">
+			<h2>Deuteranopia filter</h3>
+			<!-- Apply deuteranopia filter to the image element -->
+			<img src="Ishihara_9.png" class="deuteranopia"/>
+		</div>
+		
+		<br class="clear"/>
+		
+		<a href="https://en.wikipedia.org/wiki/Ishihara_test">Wikipedia</a> on the 74 Ishihara color test plate: Depending on the computer displays, people with normal vision should see the number "74". Many people who are color blind see it as "21", and those with total color blindness may not see any numbers.
 				
-	</body>
+	</div>
+			
+</body>
 
 </html>
