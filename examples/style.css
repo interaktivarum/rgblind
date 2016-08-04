@@ -1,0 +1,23 @@
+body{
+	font-family: sans-serif;
+}
+
+#container{
+	margin: 0px auto;
+	text-align: center;
+	width: 80%;
+}
+
+.clear{
+	clear: both;
+}
+
+.plate{
+	float: left;
+	text-align: center;
+	width: 33.3%;
+}
+
+.plate img{
+	width: 100%;
+}

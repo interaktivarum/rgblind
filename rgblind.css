@@ -1,0 +1,24 @@
+#svgfilter{
+	/*color-interpolation-filters:sRGB;*/
+}
+
+.normal{
+}
+
+.protanope{
+	-webkit-filter: url('#protanope') !important;	
+	filter: url('#protanope') !important;
+	color-interpolation-filters:sRGB !important;	
+}
+
+.deuteranope{
+	-webkit-filter: url('#deuteranope') !important;
+	filter: url('#deuteranope') !important;
+	color-interpolation-filters:sRGB !important;
+}
+
+.pink{
+	-webkit-filter: url('rgblind.svg#pink') !important;
+	filter: url('rgblind.svg#pink') !important;
+	color-interpolation-filters:sRGB !important;
+}
