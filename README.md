@@ -20,7 +20,7 @@ When including **rgblind.js** on your webpage, the Javascript code injects the *
 <script src="rgblind/rgblind.js"></script> <!-- include rgblind.js -->
 ```
 
-```
+```html
 <img src="Ishihara_9.png" class="protanope"/> <!-- apply protanope filter to the image element -->
 ```
 
