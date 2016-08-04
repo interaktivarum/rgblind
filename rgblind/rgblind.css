@@ -6,13 +6,13 @@
 }
 
 .protanopia{
-	-webkit-filter: url('protanopia') !important;	
-	filter: url('protanopia') !important;
+	-webkit-filter: url('#protanopia') !important;	
+	filter: url('#protanopia') !important;
 	color-interpolation-filters:sRGB !important;	
 }
 
 .deuteranopia{
-	-webkit-filter: url('deuteranopia') !important;
-	filter: url('deuteranopia') !important;
+	-webkit-filter: url('#deuteranopia') !important;
+	filter: url('#deuteranopia') !important;
 	color-interpolation-filters:sRGB !important;
 }
