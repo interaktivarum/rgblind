@@ -16,9 +16,3 @@
 	filter: url('#deuteranope') !important;
 	color-interpolation-filters:sRGB !important;
 }
-
-.pink{
-	-webkit-filter: url('rgblind.svg#pink') !important;
-	filter: url('rgblind.svg#pink') !important;
-	color-interpolation-filters:sRGB !important;
-}

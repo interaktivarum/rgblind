@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
 	<!-- Import RGBlind -->
-	<script src="../rgblind.js"></script>
+	<script src="../rgblind/rgblind.js"></script>
 	
 </head>
 	
@@ -20,11 +20,15 @@
 			<h1>RGBlind example</h1>
 			
 			<p>
-				The <strong>rgblind.js</strong> Javascript file injects the <strong>rgblind.css</strong> stylesheet as well as the SVG filters from <strong>rgblind.svg</strong>.
+				When including <strong>rgblind.js</strong>, the Javascript code injects the <strong>rgblind.css</strong> stylesheet and the SVG filters from <strong>rgblind.svg</strong> into the HTML code.
+			</p>
+			
+			<p>
+				The filters are applied by assigning classes to the DOM elements in the HTML code.
 			</p>
 		
 			<p>
-				All the below Ishihara plates are the same png-image, but with different svg-filters applied.
+				All the below Ishihara plates are the same png-image, but with different svg-filters applied to simulate color blindness.
 			</p>
 		
 			<div class="plate">
@@ -43,7 +47,7 @@
 			<br class="clear"/>
 			
 			<a href="https://en.wikipedia.org/wiki/Ishihara_test">Wikipedia</a> on the 74 Ishihara color test plate: Depending on the computer displays, people with normal vision should see the number "74". Many people who are color blind see it as "21", and those with total color blindness may not see any numbers.
-		
+					
 		</div>
 				
 	</body>
