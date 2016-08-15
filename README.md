@@ -40,7 +40,10 @@ Available classes are:
 See [example](examples/example.html) usage.
 
 ##RGBlind tools
-RGBlind is available as (1) an extension to the user's web browser, (2) a webpage where the user can input an url for simulation, and (3) an open source toolkit for developers to use in their own web development code.
+RGBlind is available as:
+* [Online color blindness simulator for URLs](http://www.rgblind.se/#/url)
+* [Web toolkit](https://github.com/interaktivarum/rgblind) Open-source CSS/Javascript/SVG for easy use on your own website.
+* Web browser extensions. Soon available for a selection of the major browsers.
 
 ##Contact
 
@@ -50,5 +53,5 @@ Please use the Issues tab on Github https://www.github.com/interaktivarum/rgblin
 ###Feature requests
 If you have any requests or suggestions on how RGBlind can be improved, please send an email to: martin@interaktivarum.se
 
-Share your project
+###Share your project
 Are you using RGBlind in your own project? Great! We will be happy to hear about your work and to help share your project! Please send an email to martin@interaktivarum.se
