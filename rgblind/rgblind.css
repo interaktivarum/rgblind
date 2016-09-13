@@ -1,10 +1,3 @@
-#svgfilter{
-	/*color-interpolation-filters:sRGB;*/
-}
-
-.normal{
-}
-
 .protanopia{
 	-webkit-filter: url('#protanopia') !important;	
 	filter: url('#protanopia') !important;
@@ -12,7 +5,13 @@
 }
 
 .deuteranopia{
-	-webkit-filter: url('#deuteranopia') !important;
+	-webkit-filter: url('#protanopia') !important;
 	filter: url('#deuteranopia') !important;
+	color-interpolation-filters:sRGB !important;
+}
+
+.tritanopia{
+	-webkit-filter: url('tritanopia') !important;
+	filter: url('tritanopia') !important;
 	color-interpolation-filters:sRGB !important;
 }

@@ -1,25 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
 <svg  
 	viewBox="0 0 0 0" preserveAspectRatio="xMidYMin meet"
 	xmlns="http://www.w3.org/2000/svg" version="1.1">	
 			
 	<!-- Protanopia filter -->
-	<filter id="protanopia" filterUnits="objectBoundingBox" 
-		x="0%" y="0%" width="0" height="0">
+	<filter id="protanopia">
 		<feColorMatrix in="SourceGraphic" type="matrix"
-    values="0.1135	0.8905	-0.0019	0	-0.0021
-        	      	0.1130	0.8865	0.0002	0	0.0003
-				  	0.0017	-0.0017	1	0	0
-				  	0 	0 	0 	1 	0" />
+		values="0.1135	0.8905	-0.0019	0	-0.0021
+		    	0.1130	0.8865	0.0002	0		0.0003
+				0.0017	-0.0017	1		0		0
+				0 		0 		0 		1 		0
+			"/>
 	</filter>
 	
 	<!-- Deuteranopia filter -->
-	<filter id="deuteranopia" filterUnits="objectBoundingBox" 
-		x="0%" y="0%" width="0" height="0">
+	<filter id="deuteranopia">
 		<feColorMatrix in="SourceGraphic" type="matrix"
-	    values="0.2936	0.7096	-0.0015	0	-0.0017
-	              	0.2923	0.7064	0.0006	0	0.0007
-				  	-0.0231	0.0232	0.9999	0	0
-				  	0 	0 	0 	1 	0" />	
+		values="0.2936	0.7096	-0.0015	0		-0.0017
+				0.2923	0.7064	0.0006	0		0.0007
+				-0.0231	0.0232	0.9999	0		0
+				0 		0 		0 		1 		0
+			"/>	
 	  </filter> 
+	  
+	<!-- Tritanopia filter -->
+	<filter id="tritanopia">
+		<feColorMatrix in="SourceGraphic" type="matrix"
+		values="0.95 	0.05 	0 		0 		0
+				0 		0.433	0.567	0		0
+				0		0.475	0.525	0		0
+				0		0		0		1		0
+			"/>
+	</filter>
 		  	
 </svg>

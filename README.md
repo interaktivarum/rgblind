@@ -1,6 +1,6 @@
 #RGBlind
 
-Project webpage: http://www.rgblind.se
+**Project webpage:** http://www.rgblind.se
 
 RGBlind is an open-source real-time color blindness simulation tool for the web. It is developed to:
 * Help organizations, designers and web developers understand how color blind users might experience their webpages.
@@ -11,7 +11,7 @@ The aim is to help make better structured webpages with high readability, for ev
 RGBlind is initiated, designed and developed by [Interaktiva rum (Interactive rooms)](http://www.interaktivarum.se/en) and funded by [The Internet Foundation in Sweden](http://www.iis.se/english).
 
 ##Setup and usage
-No installation is needed, just clone the or download the files and place them in a folder of your choice. The **rgblind** folder contains all the files you need to use the toolkit on your own website:
+No installation is needed, just clone or download the files and place them in a folder of your choice. The **rgblind** folder contains all the files you need to use the toolkit on your own website:
 * rgblind.js
 * rgblind.css
 * rgblind.svg
@@ -29,7 +29,7 @@ When including **rgblind.js** on your webpage, the Javascript code injects the *
 
 The filters are applied by assigning classes to the DOM elements in the HTML code.
 ```html
-<img src="Ishihara_9.png" class="protanopia"/> <!-- apply protanope filter to the image element -->
+<img src="Ishihara_9.png" class="protanopia"/> <!-- apply protanopia filter to the image element -->
 ```
 
 Available classes are:
@@ -42,7 +42,7 @@ See [example](examples/example.html) usage.
 ##RGBlind tools
 RGBlind is available as:
 * [Online color blindness simulator for URLs](http://www.rgblind.se/#/url)
-* [Web toolkit](https://github.com/interaktivarum/rgblind) Open-source CSS/Javascript/SVG for easy use on your own website.
+* [Web toolkit](https://github.com/interaktivarum/rgblind). Open-source CSS/Javascript/SVG for easy use on your own website, available on Github.
 * Web browser extensions. Soon available for a selection of the major browsers.
 
 ##Contact
