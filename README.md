@@ -21,8 +21,7 @@ Clone with Git:
 git clone https://github.com/interaktivarum/rgblind.git
 ```
 
-
-When including **rgblind.js** on your webpage, the Javascript code injects the **rgblind.css** stylesheet and the SVG filters from **rgblind.svg** into the HTML code.
+When including **rgblind.js** on your webpage, the Javascript code injects the required style sheet rules to the document's style sheet.
 ```html
 <script src="rgblind/rgblind.js"></script> <!-- include rgblind.js -->
 ```
