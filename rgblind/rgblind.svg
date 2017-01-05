@@ -1,6 +1,6 @@
 <svg  
 	viewBox="0 0 0 0" preserveAspectRatio="xMidYMin meet"
-	xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none">
+	xmlns="http://www.w3.org/2000/svg" version="1.1" style="width:0; height:0; visibility:hidden">
 			
 	<filter id="protanopia">
 		<feColorMatrix in="SourceGraphic" type="matrix"
