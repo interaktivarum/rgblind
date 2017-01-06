@@ -11,8 +11,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 */
 
 /*
-	The color filters are defined in external SVG file rgblind.svg, located in same folder as this CSS file.
-	Use this CSS file when refering to the external file, i.e. when not injecting the CSS style rules nor the SVG filters into the HTML document.   
+	The color filters are defined in external SVG file rgblind.svg. Specify the SVG file path relative to the HTML document.
+	Use this CSS file when refering to the external file, i.e. when not using rgblind.js to inject the CSS style rules nor the SVG filters into the HTML document.   
 */
 
 .protanopia{
