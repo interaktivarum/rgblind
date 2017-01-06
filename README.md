@@ -14,6 +14,7 @@ RGBlind is initiated, designed and developed by [Interaktiva rum (Interactive ro
 No installation is needed, just clone or download the files and place them in a folder of your choice. The **rgblind** folder contains all the files you need to use the toolkit on your own website:
 * rgblind.js
 * rgblind.css
+* rgblind-inject.css
 * rgblind.svg
 
 Clone with Git:
