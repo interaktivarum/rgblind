@@ -12,17 +12,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 /*
 	The color filters are defined in external SVG file rgblind.svg, located in same folder as this CSS file.
-	Use this CSS file when refering to the external file, i.e. when not injecting the CSS style rules nor the SVG filters into the HTML document.   
+	Use this CSS file when injecting both the CSS style rules and the SVG filters into the HTML document.
 */
 
 .protanopia{
-	filter: url('rgblind.svg#protanopia');
-	-webkit-filter: url('rgblind.svg#protanopia');
+	filter: url('#protanopia');
+	-webkit-filter: url('#protanopia');
 	color-interpolation-filters:sRGB;	
 }
 
 .deuteranopia{
-	filter: url('rgblind.svg#deuteranopia');
-	-webkit-filter: url('rgblind.svg#deuteranopia');
+	filter: url('#deuteranopia');
+	-webkit-filter: url('#deuteranopia');
 	color-interpolation-filters:sRGB;	
 }

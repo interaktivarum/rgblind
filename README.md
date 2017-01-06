@@ -6,7 +6,7 @@ RGBlind is an open-source real-time color blindness simulation tool for the web.
 * Help organizations, designers and web developers understand how color blind users might experience their webpages.
 * Help designers and web developers understand the problematics with designing for color blind users.
 
-The aim is to help make better structured webpages with high readability, for everyone.
+RGBlind helps designing better structured webpages with high readability, for everyone.
 
 RGBlind is initiated, designed and developed by [Interaktiva rum (Interactive rooms)](http://www.interaktivarum.se/en) and funded by [The Internet Foundation in Sweden](http://www.iis.se/english).
 
@@ -21,7 +21,7 @@ Clone with Git:
 git clone https://github.com/interaktivarum/rgblind.git
 ```
 
-When including **rgblind.js** on your webpage, the Javascript code injects the required style sheet rules to the document's style sheet.
+When including **rgblind.js** on your webpage, the Javascript code injects the required style sheet rules and SVG filters into the HTML document.
 ```html
 <script src="rgblind/rgblind.js"></script> <!-- include rgblind.js -->
 ```
@@ -32,7 +32,6 @@ The filters are applied by assigning classes to the DOM elements in the HTML cod
 ```
 
 Available classes are:
-* **.normal** - normal vision, no filter is applied
 * **.protanopia** - simulates protanopia, lacking the red cones for long-wavelength sensitive retinal cones, those with this condition are unable to distinguish between colors in the green–yellow–red section of the spectrum.
 * **.deuteranopia** - simulates deuteranopia, lacking the green cones for medium-wavelength cones, those affected are again unable to distinguish between colors in the green–yellow–red section of the spectrum.
 
@@ -40,9 +39,9 @@ See [example](examples/example.html) usage.
 
 ##RGBlind tools
 RGBlind is available as:
-* [Online color blindness simulator for URLs](http://www.rgblind.se/#/url)
+* [Online color blindness simulator for URLs](http://www.rgblind.se/url)
 * [Web toolkit](https://github.com/interaktivarum/rgblind). Open-source CSS/Javascript/SVG for easy use on your own website, available on Github.
-* Web browser extensions. Soon available for a selection of the major browsers.
+* Web browser extensions. See [RGBlind website](http://www.rgblind.se) for links.
 
 ##Contact
 

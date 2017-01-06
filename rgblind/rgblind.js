@@ -10,71 +10,39 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-//Should SVG be injected into the HTML document?
-//Default: false
-var doInjectSVG = false;
-
-//When document is ready
 document.onreadystatechange = function () {
     if (document.readyState == "interactive") {
-        if(!doInjectSVG){
-        	injectCSS();
-        }
-        else{
-	        injectCSSFromFile();
-	        injectSVG();
-        }
+        injectSVGFromFile(getScriptPath()+"rgblind.svg");
+        injectCSSFromFile(getScriptPath()+"rgblind-inject.css");
     }
 }
 
-var injectCSS = function(){
-	
-	var sheet = window.document.styleSheets[0];
-	
-	var protanopia = " \
-		.protanopia { \
-			filter: url('" + getScriptPath() + "rgblind.svg#protanopia') !important; \
-			-webkit-filter: url('" + getScriptPath() + "rgblind.svg#protanopia') !important; \
-			color-interpolation-filters:sRGB !important; \
-		}";
-	sheet.insertRule(protanopia, sheet.cssRules.length);
-	
-	var deuteranopia = " \
-		.deuteranopia { \
-			filter: url('" + getScriptPath() + "rgblind.svg#deuteranopia') !important; \
-			-webkit-filter: url('" + getScriptPath() + "rgblind.svg#deuteranopia') !important; \
-			color-interpolation-filters:sRGB !important; \
-		}";
-	sheet.insertRule(deuteranopia, sheet.cssRules.length);	
-	
-	var tritanopia = " \
-		.tritanopia { \
-			filter: url('" + getScriptPath() + "rgblind.svg#tritanopia') !important; \
-			-webkit-filter: url('" + getScriptPath() + "rgblind.svg#tritanopia') !important; \
-			color-interpolation-filters:sRGB !important; \
-		}";
-	sheet.insertRule(tritanopia, sheet.cssRules.length);
-	
-}
-
-var injectCSSFromFile = function(){
-	var inject  = document.createElement("link");
-	inject.setAttribute("rel", "stylesheet");
-	inject.setAttribute("type", "text/css");
-	inject.setAttribute("href", getScriptPath()+"rgblind.css");	
-	document.getElementsByTagName("head")[0].appendChild(inject);
-}
-
-var injectSVG = function(){
+var injectCSSFromFile = function(filePath){
 	var xmlHttp = null;	
 	xmlHttp = new XMLHttpRequest();
-	xmlHttp.open( "GET", getScriptPath()+"rgblind.svg", true);
+	xmlHttp.open( "GET", filePath, true);
 	xmlHttp.send( null );
 	xmlHttp.onreadystatechange = function() {
 	    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-	        var inject  = document.createElement("rgblind");
+	        var inject  = document.createElement("style");
 			inject.innerHTML = xmlHttp.responseText;
-			document.body.appendChild(inject);
+			//document.body.appendChild(inject);
+			document.body.insertBefore(inject, document.body.childNodes[0]);
+		}
+	};
+}
+
+var injectSVGFromFile = function(filePath){
+	var xmlHttp = null;	
+	xmlHttp = new XMLHttpRequest();
+	xmlHttp.open( "GET", filePath, true);
+	xmlHttp.send( null );
+	xmlHttp.onreadystatechange = function() {
+	    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+	        var inject  = document.createElement("temp");
+			inject.innerHTML = xmlHttp.responseText;
+			//document.body.appendChild(inject.firstChild);
+			document.body.insertBefore(inject.firstChild, document.body.childNodes[0]);
 		}
 	};
 }
